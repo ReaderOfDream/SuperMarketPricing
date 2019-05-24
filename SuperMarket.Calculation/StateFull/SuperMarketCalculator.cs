@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SuperMarket.Calculation
+namespace SuperMarket.Calculation.StateFull
 {
-    public class SuperMarketCalculator
+    public class SuperMarketCalculator : ISuperMarketCalculator
     {
         public IDictionary<char, IItemCalculator> Catalog { get; }
 
@@ -15,7 +15,7 @@ namespace SuperMarket.Calculation
 
         public int Calculate(string input)
         {
-            var items = input.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+            var items = input.Split(',');
 
             var mas = SeparateInput(items);
 

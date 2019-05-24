@@ -1,4 +1,4 @@
-﻿namespace SuperMarket.Calculation
+﻿namespace SuperMarket.Calculation.StateFull
 {
     public class DiscountItemCalculator : IItemCalculator
     {

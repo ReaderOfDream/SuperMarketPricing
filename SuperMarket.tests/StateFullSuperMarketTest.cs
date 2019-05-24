@@ -1,4 +1,5 @@
 ﻿using SuperMarket.Calculation;
+using SuperMarket.Calculation.StateFull;
 using System;
 using System.Collections.Generic;
 using Xunit;
